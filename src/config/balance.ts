@@ -4,8 +4,8 @@ export const BALANCE = {
   players: { min: 1, max: 5 },
 
   start: {
-    doubloons: 3,
-    counters: 2, // ANNAHME: jede Person startet mit 2 zufälligen Konterkarten
+    doubloons: 4,
+    counters: 3, // ANNAHME: jede Person startet mit 3 zufälligen Konterkarten
     location: 'hafen' as const,
   },
 
@@ -23,6 +23,8 @@ export const BALANCE = {
   riddles: {
     displaySize: 5,
     minCurseRiddlesOpen: 1,
+    // ANNAHME: In jeder Fluchphase verlässt das älteste normale Rätsel die Auslage, damit sie nicht versteinert.
+    rotatePerCursePhase: 1,
   },
 
   economy: {
@@ -54,7 +56,7 @@ export const BALANCE = {
   },
 
   pirates: {
-    activeOnBoard: 3, // ANNAHME: 3 Inselpiraten gleichzeitig auf der Insel
+    activeOnBoard: 4, // ANNAHME: 4 Inselpiraten gleichzeitig auf der Insel
   },
 
   trials: {

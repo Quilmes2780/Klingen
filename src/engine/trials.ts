@@ -1,6 +1,7 @@
 // Die drei Prüfungen: Klinge, Karte, Kahn.
 import { BALANCE } from '../config/balance';
 import { ITEMS, LOCATION_IDS } from './content';
+import { spawnPirate } from './board';
 import { startMasterDuel } from './duel';
 import { triggerFinale } from './finale';
 import { beginAction, returnFragment } from './items';
@@ -71,5 +72,9 @@ export function applyTrial(s: GameState, trial: TrialId): void {
     return;
   }
   log(s, 'trial', `${p.name} sticht mit Schiff und ${p.crew.length} Mann Besatzung in See.`);
+  // ANNAHME: Nach der Kahn-Prüfung heuert die Mannschaft ab und kehrt als Inselpiraten zurück.
+  s.pirateDeck.push(...p.crew);
+  p.crew = [];
+  while (s.pirates.length < BALANCE.pirates.activeOnBoard && spawnPirate(s));
   passTrial(s, p.id, 'kahn');
 }

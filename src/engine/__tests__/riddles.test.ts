@@ -136,7 +136,22 @@ describe('Gefälligkeiten', () => {
     s = run(s, { type: 'END_TURN' }, { type: 'END_TURN' }, { type: 'END_TURN' });
     // Jetzt ist p2 im übernächsten Zug.
     expect(s.favors).toHaveLength(0);
+    // Rätsel wieder auslegen (die Fluchphase kann es rotiert haben).
+    s = tweak(s, (d) => (d.riddleDisplay = ['r14', 'r01']));
     s = applyAction(s, { type: 'SOLVE_RIDDLE', riddleId: 'r14' });
     expect(s.players.p1.fame.ious).toBe(0);
+  });
+});
+
+describe('Rätselrotation (ANNAHME)', () => {
+  it('in der Fluchphase verlässt das älteste normale Rätsel die Auslage', () => {
+    const s0 = tweak(newGame(2), (d) => {
+      quietEvents(d);
+      d.riddleDisplay = ['r14', 'r01', 'r16', 'r22', 'r28'];
+    });
+    const s = endRound(s0);
+    expect(s.riddleDisplay).not.toContain('r14');
+    expect(s.riddleDisplay).toContain('r01');
+    expect(s.riddleDisplay).toHaveLength(5);
   });
 });

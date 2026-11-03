@@ -129,3 +129,12 @@ export function applySolveRiddle(s: GameState, riddleId: RiddleId): void {
     log(s, 'trial', `${solver.name} besitzt nun ein Schiff.`);
   }
 }
+
+/** Das älteste normale Rätsel der Auslage wandert unter den Stapel. */
+export function rotateRiddles(s: GameState): void {
+  for (let n = 0; n < BALANCE.riddles.rotatePerCursePhase; n++) {
+    const idx = s.riddleDisplay.findIndex((r) => !RIDDLES[r].curse);
+    if (idx < 0) return;
+    s.riddleDeck.push(s.riddleDisplay.splice(idx, 1)[0]);
+  }
+}

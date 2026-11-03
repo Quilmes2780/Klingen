@@ -1,5 +1,5 @@
 import { BALANCE } from '../config/balance';
-import { CONTENT, LOCATION_IDS, TOPIC_IDS } from './content';
+import { CONTENT, ITEMS, LOCATION_IDS, TOPIC_IDS } from './content';
 import { initialPirates } from './board';
 import { refillShop } from './items';
 import { refillRiddles } from './riddles';
@@ -17,7 +17,10 @@ export function createGame(config: GameConfig): GameState {
 
   const locationDecks = {} as Record<LocationId, ItemId[]>;
   for (const l of LOCATION_IDS) {
-    locationDecks[l] = shuffle(holder, CONTENT.items.filter((i) => i.location === l).map((i) => i.id));
+    const deck = shuffle(holder, CONTENT.items.filter((i) => i.location === l).map((i) => i.id));
+    // ANNAHME: Kartenfragmente und Schaufeln liegen zu Beginn offen oben auf ihrem Ortsstapel.
+    const special = deck.filter((i) => ITEMS[i].kind !== 'normal');
+    locationDecks[l] = [...special, ...deck.filter((i) => ITEMS[i].kind === 'normal')];
   }
 
   const players: Record<string, PlayerState> = {};

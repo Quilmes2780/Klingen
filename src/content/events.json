@@ -17,6 +17,6 @@
   { "id": "e16", "title": "Neue Gerüchte", "text": "Die Gerüchteküche brodelt. Die Rätselauslage wird komplett ausgetauscht.", "effect": { "type": "refreshRiddles" } },
   { "id": "e17", "title": "Lieferung für den Krämer", "text": "Ein Kahn bringt frische Ware. Die Auslage des Krämers wird aufgefüllt.", "effect": { "type": "restockShop" } },
   { "id": "e18", "title": "Kerzen gegen die Dunkelheit", "text": "Die Inselbewohner stellen überall Kerzen auf. Der Fluch weicht ein Stück zurück.", "effect": { "type": "curse", "amount": -1 } },
-  { "id": "e19", "title": "Blutroter Mond", "text": "Ein roter Mond steht über der Insel. Der Fluch wächst um 1 zusätzlich.", "effect": { "type": "curse", "amount": 1 } },
+  { "id": "e19", "title": "Rückenwind", "text": "Eine kräftige Brise füllt die Segel. Alle auf der Werft erhalten 2 Dublonen für schnelle Reparaturen.", "effect": { "type": "doubloons", "amount": 2, "who": "atLocation", "location": "werft" } },
   { "id": "e20", "title": "Spendable Klingenmeisterin", "text": "Die Meisterin hält ein öffentliches Training ab. Alle im Herrenhaus erhalten 2 Dublonen.", "effect": { "type": "doubloons", "amount": 2, "who": "atLocation", "location": "herrenhaus" } }
 ]

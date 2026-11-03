@@ -3,7 +3,7 @@ import { BALANCE } from '../config/balance';
 import { EVENTS, TOPIC_IDS } from './content';
 import { movePirates, spawnPirate } from './board';
 import { refillShop, removeItem } from './items';
-import { refillRiddles } from './riddles';
+import { refillRiddles, rotateRiddles } from './riddles';
 import { pick, randInt, shuffle } from './rng';
 import type { EventDef, GameState, PlayerState } from './types';
 import { addCurse, addDoubloons, itemName, locName, log, topicName } from './util';
@@ -121,6 +121,7 @@ export function runCursePhase(s: GameState): void {
   if (s.phase !== 'playing') return;
 
   movePirates(s);
+  rotateRiddles(s);
   refillRiddles(s);
   refillShop(s);
 }

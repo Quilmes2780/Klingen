@@ -44,7 +44,7 @@ describe('Fluchphase', () => {
   it('Ereignisse: Fluch-Ereignis kann direkt verlieren lassen', () => {
     const s = tweak(newGame(2), (d) => {
       d.curse = 14;
-      applyEvent(d, EVENTS.e19);
+      applyEvent(d, { id: 'test', title: 'Blutmond', text: '', effect: { type: 'curse', amount: 1 } });
     });
     expect(s.phase).toBe('lost');
   });

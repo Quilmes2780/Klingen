@@ -142,10 +142,18 @@ export function removeItem(s: GameState, playerId: PlayerId, itemId: ItemId): vo
   else s.discard.push(itemId);
 }
 
-/** Mischt ein Kartenfragment zufällig in einen Ortsstapel ein. */
+/**
+ * Verteilt ein Kartenfragment neu auf die Insel.
+ * ANNAHME: Fragmente liegen offen oben auf einem zufälligen Ortsstapel (wer dort sucht, findet es zuerst).
+ */
 export function returnFragment(s: GameState, itemId: ItemId): void {
   const locs = Object.keys(s.locationDecks) as (keyof typeof s.locationDecks)[];
   const loc = locs[randInt(s, locs.length)];
-  const deck = s.locationDecks[loc];
-  deck.splice(randInt(s, deck.length + 1), 0, itemId);
+  s.locationDecks[loc].unshift(itemId);
+}
+
+/** Oberste Karte eines Ortsstapels, falls sie offen liegt (Fragment oder Schaufel). */
+export function visibleTop(s: GameState, loc: keyof GameState['locationDecks']): ItemId | null {
+  const top = s.locationDecks[loc][0];
+  return top && ITEMS[top].kind !== 'normal' ? top : null;
 }

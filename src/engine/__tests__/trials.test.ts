@@ -54,7 +54,9 @@ describe('Prüfung des Kahns', () => {
   it('Schiff + 3 Mannschaftskarten im Hafen', () => {
     const s = applyAction(ready(), { type: 'TRIAL', trial: 'kahn' });
     expect(s.players.p1.trials.kahn).toBe(true);
-    expect(s.players.p1.crew).toHaveLength(3);
+    // Die Mannschaft heuert danach ab und kehrt als Piraten zurück.
+    expect(s.players.p1.crew).toHaveLength(0);
+    expect([...s.pirateDeck, ...s.pirates.map((p) => p.id)]).toEqual(expect.arrayContaining(['p1', 'p2', 'p3']));
   });
 
   it('ohne Schiff, ohne Mannschaft oder außerhalb des Hafens nicht', () => {
@@ -116,5 +118,34 @@ describe('Schiffskauf', () => {
     const s = tweak(newGame(2), (d) => (d.players.p1.doubloons = 20));
     expect(() => applyAction(s, { type: 'BUY_SHIP' })).toThrow();
     expect(run(s, { type: 'MOVE', to: 'werft' }, { type: 'BUY_SHIP' }).players.p1.hasShip).toBe(true);
+  });
+});
+
+describe('Fragmente und Schaufeln (ANNAHME: offen oben auf dem Stapel)', () => {
+  it('liegen zu Spielbeginn oben auf ihrem Ortsstapel', () => {
+    const s = newGame(2, 'frag');
+    for (const deck of Object.values(s.locationDecks)) {
+      const specials = deck.filter((i) => ITEMS[i].kind !== 'normal').length;
+      for (let k = 0; k < specials; k++) expect(ITEMS[deck[k]].kind).not.toBe('normal');
+    }
+  });
+
+  it('nach dem Schatzheben liegen die Fragmente oben auf zufälligen Stapeln', () => {
+    const s = applyAction(karteReady(), { type: 'TRIAL', trial: 'karte' });
+    const tops = Object.values(s.locationDecks).flatMap((d) => d.slice(0, 4).filter((i) => ITEMS[i].kind === 'fragment'));
+    expect(tops.sort()).toEqual([...FRAGMENTS].sort());
+  });
+
+  it('nach der Kahn-Prüfung kehren Mannschaftskarten als Piraten zurück', () => {
+    const s = applyAction(
+      tweak(newGame(2), (d) => {
+        d.players.p1.hasShip = true;
+        d.players.p1.crew = ['p6', 'p7', 'p8'];
+        d.pirates = [];
+        d.pirateDeck = [];
+      }),
+      { type: 'TRIAL', trial: 'kahn' },
+    );
+    expect(s.pirates.map((p) => p.id).sort()).toEqual(['p6', 'p7', 'p8']);
   });
 });

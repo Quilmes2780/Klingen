@@ -48,7 +48,7 @@ describe('Einkaufen', () => {
     const topic = ['geruch', 'schiff', 'tanz'].find((t) => !s0.players.p1.counters.includes(t))!;
     const s = applyAction(s0, { type: 'BUY_COUNTER', topicId: topic });
     expect(s.players.p1.counters).toContain(topic);
-    expect(s.players.p1.doubloons).toBe(0);
+    expect(s.players.p1.doubloons).toBe(BALANCE.start.doubloons - BALANCE.economy.counterCost);
   });
 
   it('Konter nicht doppelt und nicht ohne Geld', () => {
