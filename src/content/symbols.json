@@ -1,0 +1,18 @@
+[
+  { "id": "seil", "name": "Seil" },
+  { "id": "schluessel", "name": "Schlüssel" },
+  { "id": "laterne", "name": "Laterne" },
+  { "id": "flasche", "name": "Flasche" },
+  { "id": "kompass", "name": "Kompass" },
+  { "id": "haken", "name": "Haken" },
+  { "id": "feder", "name": "Feder" },
+  { "id": "knochen", "name": "Knochen" },
+  { "id": "kerze", "name": "Kerze" },
+  { "id": "fisch", "name": "Fisch" },
+  { "id": "hammer", "name": "Hammer" },
+  { "id": "glocke", "name": "Glocke" },
+  { "id": "muschel", "name": "Muschel" },
+  { "id": "buch", "name": "Buch" },
+  { "id": "fragment", "name": "Kartenfragment" },
+  { "id": "schaufel", "name": "Schaufel" }
+]

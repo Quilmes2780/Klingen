@@ -1,0 +1,10 @@
+[
+  { "id": "p1", "name": "Ole Ohnehut", "strength": 2, "startLocation": "hafen", "taunt": "Mein Hut ist weg, aber meine Zunge ist noch da!" },
+  { "id": "p2", "name": "Brakka die Bleiche", "strength": 2, "startLocation": "taverne", "taunt": "Ich bin blass vor Vorfreude!" },
+  { "id": "p3", "name": "Muschel-Mats", "strength": 3, "startLocation": "werft", "taunt": "Ich sammle Muscheln – und Siege!" },
+  { "id": "p4", "name": "Rasmine Rostzahn", "strength": 3, "startLocation": "dschungel", "taunt": "Mein Lächeln rostet, mein Witz nicht!" },
+  { "id": "p5", "name": "Knut Kielschwein", "strength": 4, "startLocation": "friedhof", "taunt": "Ich habe schon Gräber ausgehoben, die tiefer waren als dein Wortschatz!" },
+  { "id": "p6", "name": "Hedda Hakenfaust", "strength": 4, "startLocation": "leuchtturm", "taunt": "Mein Haken sitzt locker, meine Sprüche sitzen fest!" },
+  { "id": "p7", "name": "Gorm der Grollende", "strength": 5, "startLocation": "herrenhaus", "taunt": "Grrr. Das war schon eine Beleidigung." },
+  { "id": "p8", "name": "Lady Sturmfeder", "strength": 5, "startLocation": "kraemer", "taunt": "Ich wehe dich vom Steg, Liebling!" }
+]

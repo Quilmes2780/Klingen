@@ -1,0 +1,57 @@
+[
+  { "id": "i01", "name": "Ausgefranstes Tauende", "symbol": "seil", "location": "hafen", "kind": "normal", "flavor": "Hat schon bessere Knoten gesehen." },
+  { "id": "i02", "name": "Zappelnder Hering", "symbol": "fisch", "location": "hafen", "kind": "normal", "flavor": "Er hat noch Pläne." },
+  { "id": "i03", "name": "Bootshaken", "symbol": "haken", "location": "hafen", "kind": "normal", "flavor": "Angelt Boote, Hüte und gelegentlich Ohren." },
+  { "id": "i04", "name": "Verbeulte Schiffsglocke", "symbol": "glocke", "location": "hafen", "kind": "normal", "flavor": "Klingt wie ein Huster in Moll." },
+  { "id": "i05", "name": "Perlmuschel ohne Perle", "symbol": "muschel", "location": "hafen", "kind": "normal", "flavor": "Die Perle ist auf Weltreise." },
+  { "id": "i06", "name": "Flaschenpost", "symbol": "flasche", "location": "hafen", "kind": "normal", "flavor": "Inhalt: ein Einkaufszettel." },
+
+  { "id": "i07", "name": "Leere Grogflasche", "symbol": "flasche", "location": "taverne", "kind": "normal", "flavor": "Leer. Wie immer, wenn man sie braucht." },
+  { "id": "i08", "name": "Tropfende Talgkerze", "symbol": "kerze", "location": "taverne", "kind": "normal", "flavor": "Tropft lieber, als zu leuchten." },
+  { "id": "i09", "name": "Saurer Rollmops", "symbol": "fisch", "location": "taverne", "kind": "normal", "flavor": "Schaut beleidigt." },
+  { "id": "i10", "name": "Fleckiges Liederbuch", "symbol": "buch", "location": "taverne", "kind": "normal", "flavor": "Jedes Lied endet mit „Hoho“." },
+  { "id": "i11", "name": "Wirtshaus-Gänsekiel", "symbol": "feder", "location": "taverne", "kind": "normal", "flavor": "Hat schon viele Deckel geschrieben." },
+  { "id": "i12", "name": "Thekenglocke", "symbol": "glocke", "location": "taverne", "kind": "normal", "flavor": "Ding! Niemand kommt." },
+
+  { "id": "i13", "name": "Sturmlaterne", "symbol": "laterne", "location": "kraemer", "kind": "normal", "flavor": "Garantiert windfest. Bei Windstille." },
+  { "id": "i14", "name": "Taschenkompass", "symbol": "kompass", "location": "kraemer", "kind": "normal", "flavor": "Zeigt meistens zum Kühlschrank." },
+  { "id": "i15", "name": "Wäscheleine", "symbol": "seil", "location": "kraemer", "kind": "normal", "flavor": "Noch mit einer einsamen Socke dran." },
+  { "id": "i16", "name": "Holzhammer", "symbol": "hammer", "location": "kraemer", "kind": "normal", "flavor": "Für feine Arbeiten ungeeignet." },
+  { "id": "i17", "name": "Verdächtig vielseitiger Dietrich", "symbol": "schluessel", "location": "kraemer", "kind": "normal", "flavor": "Der Krämer schwört, er sei für Marmeladengläser." },
+  { "id": "i18", "name": "Bienenwachskerze", "symbol": "kerze", "location": "kraemer", "kind": "normal", "flavor": "Riecht nach Honig und Ausreden." },
+
+  { "id": "i19", "name": "Zimmermannshammer", "symbol": "hammer", "location": "werft", "kind": "normal", "flavor": "Hat schon drei Daumen auf dem Gewissen." },
+  { "id": "i20", "name": "Enterhaken", "symbol": "haken", "location": "werft", "kind": "normal", "flavor": "Für spontane Besuche auf fremden Schiffen." },
+  { "id": "i21", "name": "Ankertau", "symbol": "seil", "location": "werft", "kind": "normal", "flavor": "Schwer, nass und unglaublich zuverlässig." },
+  { "id": "i22", "name": "Positionslaterne", "symbol": "laterne", "location": "werft", "kind": "normal", "flavor": "Rot für Backbord. Oder war es Grün?" },
+  { "id": "i23", "name": "Teerschaufel", "symbol": "schaufel", "location": "werft", "kind": "schaufel", "flavor": "Klebrig, aber gräbt." },
+  { "id": "i24", "name": "Messingkompass", "symbol": "kompass", "location": "werft", "kind": "normal", "flavor": "Glänzt mehr, als er weiß." },
+
+  { "id": "i25", "name": "Bunte Papageienfeder", "symbol": "feder", "location": "dschungel", "kind": "normal", "flavor": "Der Papagei will sie zurück." },
+  { "id": "i26", "name": "Ausgebleichter Knochen", "symbol": "knochen", "location": "dschungel", "kind": "normal", "flavor": "Vermutlich von einem Wildschwein. Vermutlich." },
+  { "id": "i27", "name": "Riesenschneckenhaus", "symbol": "muschel", "location": "dschungel", "kind": "normal", "flavor": "Die Schnecke ist umgezogen." },
+  { "id": "i28", "name": "Kartenfragment „Nordwind“", "symbol": "fragment", "location": "dschungel", "kind": "fragment", "flavor": "Eine Ecke mit einer Windrose und einem Kaffeefleck." },
+  { "id": "i29", "name": "Verirrter Kompass", "symbol": "kompass", "location": "dschungel", "kind": "normal", "flavor": "Sein Vorbesitzer ist noch auf der Suche." },
+  { "id": "i30", "name": "Steinhammer", "symbol": "hammer", "location": "dschungel", "kind": "normal", "flavor": "Uralt, unhandlich, unkaputtbar." },
+
+  { "id": "i31", "name": "Knarrender Schienbeinknochen", "symbol": "knochen", "location": "friedhof", "kind": "normal", "flavor": "Knarrt, wenn man ihn ansieht." },
+  { "id": "i32", "name": "Flackerndes Grablicht", "symbol": "kerze", "location": "friedhof", "kind": "normal", "flavor": "Geht nie ganz aus. Unheimlich praktisch." },
+  { "id": "i33", "name": "Totengräberschaufel", "symbol": "schaufel", "location": "friedhof", "kind": "schaufel", "flavor": "Der Totengräber hat Urlaub." },
+  { "id": "i34", "name": "Kartenfragment „Ostflut“", "symbol": "fragment", "location": "friedhof", "kind": "fragment", "flavor": "Ein Stück Küste und ein halbes Kreuz." },
+  { "id": "i35", "name": "Bimmelndes Totenglöckchen", "symbol": "glocke", "location": "friedhof", "kind": "normal", "flavor": "Bimmelt auch ohne Wind. Frag lieber nicht." },
+  { "id": "i36", "name": "Rostiger Gruftschlüssel", "symbol": "schluessel", "location": "friedhof", "kind": "normal", "flavor": "Passt in jede Gruft, die du lieber nicht öffnest." },
+
+  { "id": "i37", "name": "Familienchronik", "symbol": "buch", "location": "herrenhaus", "kind": "normal", "flavor": "Dreihundert Seiten über preisgekrönte Rosen." },
+  { "id": "i38", "name": "Silberner Schlüssel", "symbol": "schluessel", "location": "herrenhaus", "kind": "normal", "flavor": "Zu fein für gewöhnliche Schlösser." },
+  { "id": "i39", "name": "Pfauenfeder", "symbol": "feder", "location": "herrenhaus", "kind": "normal", "flavor": "Eitler als ihr ehemaliger Besitzer." },
+  { "id": "i40", "name": "Kartenfragment „Südsand“", "symbol": "fragment", "location": "herrenhaus", "kind": "fragment", "flavor": "Mit einer Palme, die verdächtig nach Gekritzel aussieht." },
+  { "id": "i41", "name": "Messingkandelaber", "symbol": "laterne", "location": "herrenhaus", "kind": "normal", "flavor": "Drei Arme, keine Geduld." },
+  { "id": "i42", "name": "Parfümflakon", "symbol": "flasche", "location": "herrenhaus", "kind": "normal", "flavor": "Duft: „Seebrise nach dem Regen“. Riecht nach Kohl." },
+
+  { "id": "i43", "name": "Kartenfragment „Westnebel“", "symbol": "fragment", "location": "leuchtturm", "kind": "fragment", "flavor": "Fast komplett mit Nebel bemalt. Sehr ehrlich." },
+  { "id": "i44", "name": "Muschelhorn", "symbol": "muschel", "location": "leuchtturm", "kind": "normal", "flavor": "Tutet wie eine verärgerte Kuh." },
+  { "id": "i45", "name": "Logbuch des Wärters", "symbol": "buch", "location": "leuchtturm", "kind": "normal", "flavor": "Eintrag 412: „Möwe hat mich angesehen.“" },
+  { "id": "i46", "name": "Fischhaken", "symbol": "haken", "location": "leuchtturm", "kind": "normal", "flavor": "Klein, spitz, nachtragend." },
+  { "id": "i47", "name": "Polierte Fischgräte", "symbol": "knochen", "location": "leuchtturm", "kind": "normal", "flavor": "Ein Kamm für Optimisten." },
+  { "id": "i48", "name": "Getrockneter Kabeljau", "symbol": "fisch", "location": "leuchtturm", "kind": "normal", "flavor": "Hart genug, um damit Nägel einzuschlagen." }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "hafen",
+    "name": "Hafen",
+    "description": "Knarrende Stege, kreischende Möwen und ein Hafenmeister, der alles notiert – außer seine Schulden.",
+    "coastal": true,
+    "neighbors": ["taverne", "kraemer", "werft"],
+    "x": 470,
+    "y": 470
+  },
+  {
+    "id": "taverne",
+    "name": "Taverne „Zum schiefen Anker“",
+    "description": "Hier wird mehr geprahlt als getrunken – und getrunken wird viel.",
+    "coastal": false,
+    "neighbors": ["hafen", "kraemer"],
+    "x": 330,
+    "y": 420
+  },
+  {
+    "id": "kraemer",
+    "name": "Krämerladen",
+    "description": "Ein Laden voller Dinge, von denen niemand weiß, wozu sie gut sind – bis man sie braucht.",
+    "coastal": false,
+    "neighbors": ["hafen", "taverne", "dschungel"],
+    "x": 400,
+    "y": 330
+  },
+  {
+    "id": "werft",
+    "name": "Werft",
+    "description": "Es riecht nach Teer, Sägespänen und unerfüllten Segelträumen.",
+    "coastal": true,
+    "neighbors": ["hafen", "leuchtturm"],
+    "x": 610,
+    "y": 420
+  },
+  {
+    "id": "dschungel",
+    "name": "Dschungel",
+    "description": "Dichtes Grün, laute Vögel und Pfade, die sich nach Lust und Laune verlegen.",
+    "coastal": false,
+    "neighbors": ["kraemer", "friedhof", "herrenhaus"],
+    "x": 330,
+    "y": 210
+  },
+  {
+    "id": "friedhof",
+    "name": "Friedhof",
+    "description": "Schiefe Grabsteine mit noch schieferen Inschriften. Nachts flüstert der Nebel.",
+    "coastal": true,
+    "neighbors": ["dschungel", "leuchtturm"],
+    "x": 170,
+    "y": 150
+  },
+  {
+    "id": "herrenhaus",
+    "name": "Herrenhaus",
+    "description": "Das Anwesen der Klingenmeisterin. Der Rasen ist gestutzt, die Zungen sind es nicht.",
+    "coastal": false,
+    "neighbors": ["dschungel", "leuchtturm"],
+    "x": 470,
+    "y": 140
+  },
+  {
+    "id": "leuchtturm",
+    "name": "Leuchtturm",
+    "description": "Der Wärter redet seit Jahren nur mit seinen Möwen. Die Möwen antworten.",
+    "coastal": true,
+    "neighbors": ["werft", "friedhof", "herrenhaus"],
+    "x": 650,
+    "y": 210
+  }
+]

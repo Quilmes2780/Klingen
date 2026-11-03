@@ -1,0 +1,10 @@
+[
+  { "id": "f1", "topic": "geruch", "text": "Ich rieche eure Angst bis in mein feuchtes Grab, ihr Sterblichen!" },
+  { "id": "f2", "topic": "schiff", "text": "Euer Seelenverkäufer ist löchriger als mein Leichentuch!" },
+  { "id": "f3", "topic": "fechtkunst", "text": "Selbst meine Skelette fechten mit mehr Gefühl als ihr!" },
+  { "id": "f4", "topic": "mannschaft", "text": "Wenn ich mit euch fertig bin, heuert eure Crew auf meinem Geisterschiff an!" },
+  { "id": "f5", "topic": "mut", "text": "Eure Knie klappern lauter als meine Knochen!" },
+  { "id": "f6", "topic": "verstand", "text": "Seit hundert Jahren tot und immer noch klüger als ihr alle zusammen!" },
+  { "id": "f7", "topic": "ruhm", "text": "Eure Namen sind vergessen, sobald sich der Nebel hebt!" },
+  { "id": "f8", "topic": "navigation", "text": "Ihr findet ja nicht einmal aus meinem Nebel heraus!" }
+]

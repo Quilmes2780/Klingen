@@ -1,0 +1,6 @@
+node_modules
+dist
+*.log
+.DS_Store
+sim-results.json
+.claude/settings.local.json

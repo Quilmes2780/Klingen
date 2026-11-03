@@ -1,0 +1,114 @@
+[
+  {
+    "id": "geruch",
+    "name": "Geruch",
+    "insult": "Du riechst nach drei Wochen altem Pökelfisch!",
+    "counter": "Ich wollte nur, dass du dich wie zu Hause fühlst.",
+    "masterInsult": "Selbst die Hafenratten halten sich die Nase zu, wenn du vorbeikommst!"
+  },
+  {
+    "id": "schiff",
+    "name": "Schiff",
+    "insult": "Dein Schiff hat mehr Löcher als ein Fischernetz!",
+    "counter": "Deshalb bleiben Fische wie du ja auch drin hängen.",
+    "masterInsult": "Dein Kahn ist so leck, dass die Fischer ihn sich als Reuse ausleihen!"
+  },
+  {
+    "id": "fechtkunst",
+    "name": "Fechtkunst",
+    "insult": "Ich habe Krabben gesehen, die eleganter fechten als du!",
+    "counter": "Kein Wunder, du verbringst ja deine Abende mit ihnen.",
+    "masterInsult": "Du führst die Klinge wie ein Seestern mit Schluckauf!"
+  },
+  {
+    "id": "mannschaft",
+    "name": "Mannschaft",
+    "insult": "Wenn ich mit dir fertig bin, sucht deine Crew einen neuen Kapitän!",
+    "counter": "Dich nehmen sie trotzdem nicht, die haben Geschmack.",
+    "masterInsult": "Deine Mannschaft sieht sich heimlich schon nach einem besseren Kapitän um!"
+  },
+  {
+    "id": "verstand",
+    "name": "Verstand",
+    "insult": "In deinem Kopf ist mehr Leere als in einer Schatztruhe nach dem Zahltag!",
+    "counter": "Und trotzdem bin ich dir immer einen Gedanken voraus.",
+    "masterInsult": "Du denkst so langsam, dass dich die Schnecken überholen!"
+  },
+  {
+    "id": "aussehen",
+    "name": "Aussehen",
+    "insult": "Dein Gesicht würde selbst eine Galionsfigur erschrecken!",
+    "counter": "Dann halt besser Abstand – dein Anblick hat schon ganze Flotten versenkt.",
+    "masterInsult": "Wenn du in den Spiegel schaust, springt er freiwillig über Bord!"
+  },
+  {
+    "id": "mut",
+    "name": "Mut",
+    "insult": "Du zitterst ja schon, wenn eine Möwe niest!",
+    "counter": "Das ist kein Zittern, das ist Mitleid mit dir.",
+    "masterInsult": "Deine Knie schlottern lauter als meine Fahne im Sturm!"
+  },
+  {
+    "id": "gesang",
+    "name": "Gesang",
+    "insult": "Wenn du singst, flüchten sogar die Wale in tiefere Gewässer!",
+    "counter": "Immerhin hört man mich – von deinen Siegen hört man nie etwas.",
+    "masterInsult": "Dein Gesang hat den Leuchtturmwärter dazu gebracht, Möwisch zu lernen!"
+  },
+  {
+    "id": "kochkunst",
+    "name": "Kochkunst",
+    "insult": "Dein Eintopf hat schon zwei Köche und einen Hai auf dem Gewissen!",
+    "counter": "Und du stehst trotzdem jeden Abend für Nachschlag an.",
+    "masterInsult": "Nach deinem Kombüsenfraß bittet sogar die Schiffsratte um Landgang!"
+  },
+  {
+    "id": "reichtum",
+    "name": "Reichtum",
+    "insult": "In deinem Geldbeutel wohnen nur Motten und Ausreden!",
+    "counter": "Mein Reichtum ist mein Witz – darum bist du so bettelarm.",
+    "masterInsult": "Dein ganzer Schatz passt in eine Nussschale – und die Nuss hat noch Platz!"
+  },
+  {
+    "id": "kraft",
+    "name": "Kraft",
+    "insult": "Du hast Ärmchen wie nasse Nudeln!",
+    "counter": "Immer noch kräftig genug, um dir den Hut zurechtzurücken.",
+    "masterInsult": "Du könntest nicht mal einen Korken aus der Flasche ziehen!"
+  },
+  {
+    "id": "navigation",
+    "name": "Navigation",
+    "insult": "Du verirrst dich ja sogar auf einem Floß!",
+    "counter": "Ich habe mich nur verfahren, um dir aus dem Weg zu gehen.",
+    "masterInsult": "Du findest den Hafen nicht mal, wenn man dich hineinwirft!"
+  },
+  {
+    "id": "kleidung",
+    "name": "Kleidung",
+    "insult": "Dein Mantel sieht aus, als hätte ihn ein Seeigel getragen!",
+    "counter": "Ein Geschenk von deiner Tante – sie lässt herzlich grüßen.",
+    "masterInsult": "In deinen Lumpen würde sich nicht mal eine Vogelscheuche blicken lassen!"
+  },
+  {
+    "id": "papagei",
+    "name": "Papagei",
+    "insult": "Selbst dein Papagei schämt sich für deine Sprüche!",
+    "counter": "Er weiß eben schon, wie dieses Duell für dich ausgeht.",
+    "masterInsult": "Dein Papagei hält sich beim Kämpfen die Augen zu!"
+  },
+  {
+    "id": "ruhm",
+    "name": "Ruhm",
+    "insult": "Niemand auf dieser Insel kennt deinen Namen!",
+    "counter": "Nach heute wird man sich an mich erinnern – als den, der dich besiegt hat.",
+    "masterInsult": "Dein Name taugt höchstens als Fußnote in meinen Memoiren!"
+  },
+  {
+    "id": "tanz",
+    "name": "Tanz",
+    "insult": "Du bewegst dich wie ein Seekuhbaby auf Glatteis!",
+    "counter": "Wenigstens bewege ich mich – du stehst nur auf dem Schlauch.",
+    "masterInsult": "Deine Beinarbeit sieht aus wie ein Krebs beim Rückwärtseinparken!"
+  }
+]
