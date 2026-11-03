@@ -3,6 +3,10 @@
 Browser-Umsetzung des semi-kooperativen Insel-Abenteuers mit Rätseln und Wortgefechten.
 TypeScript, Vite, React, ohne Server. Hotseat für 1–5 Personen (Mensch oder KI); mit einer Person läuft der Solo-Modus.
 
+## Online spielen
+
+https://quilmes2780.github.io/Klingen/ – wird bei jedem Push auf `main` automatisch gebaut, getestet und veröffentlicht (`.github/workflows/deploy.yml`).
+
 ## Starten
 
 ```bash
