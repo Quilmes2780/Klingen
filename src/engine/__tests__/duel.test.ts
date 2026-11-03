@@ -173,3 +173,14 @@ describe('Wortgefecht auf dem Brett', () => {
     expect(s.duel!.heard[0]).toEqual(['geruch']);
   });
 });
+
+describe('Protokoll', () => {
+  it('ein falscher Konter wird als „passt nicht“ protokolliert', () => {
+    let s = tweak(newGame(2), (d) => {
+      d.players.p1.counters = [];
+      d.players.p2.counters = ['tanz'];
+    });
+    s = run(s, { type: 'DUEL_PLAYER', playerId: 'p2' }, { type: 'DUEL_PICK', topicId: 'geruch' }, { type: 'DUEL_COUNTER', topicId: 'tanz' });
+    expect(s.log.at(-1)?.text).toContain('kontert mit „Tanz“ – passt nicht');
+  });
+});

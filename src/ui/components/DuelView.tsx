@@ -58,7 +58,6 @@ export function DuelView({ duel, names, deciderCounters, humanDecides, speech, o
     speak(lines);
   }, [duel.exchanges.length, duel.topic, duel.stage, speech, duel]);
 
-  const learned = duel.learned[0];
   const playerWon = duel.winner === 0;
 
   return (
@@ -123,11 +122,13 @@ export function DuelView({ duel, names, deciderCounters, humanDecides, speech, o
           <h3 style={{ color: playerWon ? 'var(--ok)' : 'var(--danger)' }}>
             {playerWon ? `${names[0]} gewinnt!` : `${names[1]} gewinnt!`}
           </h3>
-          {learned.length ? (
-            <div className="small-text">
-              Gelernt (Lernen durch Verlieren): {learned.map((t) => TOPICS[t].name).join(', ')}
-            </div>
-          ) : null}
+          {([0, 1] as const).map((side) =>
+            duel.learned[side].length ? (
+              <div key={side} className="small-text">
+                {names[side]} lernt (Lernen durch Verlieren): {duel.learned[side].map((t) => TOPICS[t].name).join(', ')}
+              </div>
+            ) : null,
+          )}
           {extra}
           {onClose ? (
             <button className="primary" onClick={onClose} autoFocus>

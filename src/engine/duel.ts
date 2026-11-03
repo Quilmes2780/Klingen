@@ -218,7 +218,7 @@ function afterDuelStep(s: GameState, before: number): void {
     const a = sideName(s, d.sides[ex.attacker]);
     const b = sideName(s, d.sides[ex.attacker === 0 ? 1 : 0]);
     const res = d.kind === 'master' ? (ex.parried ? 'Treffer für ' + b : 'Treffer für ' + a) : ex.parried ? 'pariert' : 'Treffer für ' + a;
-    log(s, 'duel', `${a} greift mit „${topicName(ex.topic)}“ an – ${b}: ${ex.counter ? 'kontert' : 'bleibt stumm'} (${res}).`);
+    log(s, 'duel', `${a} greift mit „${topicName(ex.topic)}“ an – ${b}: ${!ex.counter ? 'bleibt stumm' : ex.counter === ex.topic ? 'kontert' : `kontert mit „${topicName(ex.counter)}“ – passt nicht`} (${res}).`);
   }
   if (d.stage === 'over') resolveDuel(s);
 }
