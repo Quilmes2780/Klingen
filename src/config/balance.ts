@@ -16,7 +16,7 @@ export const BALANCE = {
     perRound: 1,
     ghostApparition: 2, // Geistererscheinung: +2 statt +1
     extraEventFrom: 10, // ab diesem Feld eine zusätzliche Ereigniskarte
-    curseRiddleReduction: 2,
+    curseRiddleReduction: 3, // Regel: −2; per Simulation auf −3 angehoben (siehe README)
     graveyardPirateReduction: 1,
   },
 

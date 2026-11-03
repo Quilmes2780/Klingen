@@ -63,30 +63,32 @@ Der Seed steht oben im Spiel. Gleicher Seed und gleiche Züge ergeben dieselbe P
 
 ## Simulation (200 KI-Partien je Spielerzahl)
 
+**Standard seit Balance-Anpassung:** Ein gelöstes Fluch-Rätsel senkt den Fluch um **3** statt der ursprünglichen Regel −2 (`curse.curseRiddleReduction` in `src/config/balance.ts`). Grund: Mit −2 schlug die Gruppe den Fluch kaum je (2P 0 %, 3P 0,5 %, 4P 6 %, 5P 12,5 %).
+
 | Personen | Sieg gegen den Fluch | Ø Runden | Ø Konter beim Bestehen der Klinge |
 | --- | --- | --- | --- |
-| 2 | 0,0 % | 18,4 | 12,2 |
-| 3 | 0,5 % | 23,2 | 11,4 |
-| 4 | 6,0 % | 25,5 | 10,8 |
-| 5 | 12,5 % | 25,9 | 10,7 |
+| 2 | 0,0 % | 21,9 | 11,0 |
+| 3 | 6,5 % | 28,7 | 11,9 |
+| 4 | 28,0 % | 29,9 | 11,0 |
+| 5 | 31,0 % | 29,3 | 10,8 |
 
 Ø Ruhm je Person nach Quelle:
 
 | Personen | Prüfungen | Rätsel | Duelle | Schuldscheine | Finale | Bonus | Dublonen |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 2 | 1,06 | 3,80 | 0,71 | 0,10 | 0,00 | 0,00 | 0,23 |
-| 3 | 2,13 | 5,37 | 1,66 | 0,28 | 0,02 | 0,01 | 0,34 |
-| 4 | 3,24 | 5,47 | 2,26 | 0,43 | 0,15 | 0,04 | 0,47 |
-| 5 | 3,53 | 5,15 | 2,22 | 0,58 | 0,25 | 0,07 | 0,70 |
+| 2 | 1,54 | 4,62 | 1,23 | 0,15 | 0,00 | 0,00 | 0,27 |
+| 3 | 3,76 | 6,25 | 2,62 | 0,28 | 0,22 | 0,07 | 0,45 |
+| 4 | 4,91 | 5,88 | 3,01 | 0,48 | 0,70 | 0,21 | 0,63 |
+| 5 | 4,47 | 5,49 | 2,57 | 0,61 | 0,62 | 0,19 | 1,09 |
 
-**Lesart:** Das Spiel ist mit den verbindlichen Regeln sehr schwer, vor allem zu zweit und zu dritt. Eine einzelne Person braucht für drei Prüfungen deutlich mehr Züge, als der Fluch hergibt (Fluch +1 je Runde, Ende bei 15). Zu zweit lohnen sich Fluch-Rätsel kaum: Sie kosten etwa so viele Aktionen, wie sie Runden zurückbringen. Die KI ist eine Heuristik und spielt nicht optimal. Menschen dürften besser abschneiden, die Tendenz bleibt aber.
+**Lesart:** Ab vier Personen ist das Spiel jetzt fordernd, aber gewinnbar. Zu zweit bleibt es praktisch unschaffbar: Eine einzelne Person braucht für drei Prüfungen mehr Züge, als der Fluch hergibt, und zu zweit gibt es zu wenige Hände für Fluch-Rätsel. Die KI ist eine Heuristik und spielt nicht optimal; Menschen dürften besser abschneiden.
 
-Empfindlichkeit (je 40 Partien; die Basis entspricht der Tabelle oben):
+Empfindlichkeit (je 40 Partien, gemessen mit der ursprünglichen Regel −2 als Basis):
 
 | Variante | 2P | 3P | 4P | 5P |
 | --- | --- | --- | --- | --- |
-| Basis | 0 % | 0 % | 3 % | 20 % |
-| Fluch-Rätsel −3 statt −2 | 0 % | 8 % | 30 % | 40 % |
+| Basis (−2) | 0 % | 0 % | 3 % | 20 % |
+| Fluch-Rätsel −3 statt −2 (jetzt Standard) | 0 % | 8 % | 30 % | 40 % |
 | Mannschaft 2 statt 3 | 0 % | 0 % | 5 % | 33 % |
 | Schiff 6 statt 10 | 0 % | 5 % | 13 % | 15 % |
 | Fluch-Maximum 20 | 0 % | 10 % | 33 % | 30 % |

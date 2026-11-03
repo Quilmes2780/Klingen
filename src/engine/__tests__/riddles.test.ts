@@ -43,7 +43,7 @@ describe('Rätsel', () => {
     expect(() => applyAction(s, { type: 'SOLVE_RIDDLE', riddleId: 'r14' })).toThrow();
   });
 
-  it('Fluch-Rätsel: Gegenstände mehrerer Personen am Ort, Fluch −2, Ruhm geteilt', () => {
+  it('Fluch-Rätsel: Gegenstände mehrerer Personen am Ort, Fluch sinkt, Ruhm geteilt', () => {
     const s0 = tweak(base(), (d) => {
       d.curse = 6;
       d.players.p1.items = ['i13']; // laterne
