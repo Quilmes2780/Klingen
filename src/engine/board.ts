@@ -58,6 +58,7 @@ export function travelTurns(a: LocationId, b: LocationId): number {
   return best;
 }
 
+// ANNAHME: Die Bewegung ist optional; wer stehen bleibt, darf trotzdem eine Aktion ausführen.
 export function canMoveNow(s: GameState): boolean {
   return s.phase === 'playing' && !s.duel && !s.moved && !s.acted;
 }

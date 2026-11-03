@@ -4,7 +4,7 @@ export const BALANCE = {
   players: { min: 1, max: 5 },
 
   start: {
-    doubloons: 4,
+    doubloons: 4, // ANNAHME: Startkapital 4 Dublonen (Regel nennt keinen Wert)
     counters: 3, // ANNAHME: jede Person startet mit 3 zufälligen Konterkarten
     location: 'hafen' as const,
   },

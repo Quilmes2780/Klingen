@@ -184,6 +184,7 @@ export function applyDuelPlayer(s: GameState, targetId: PlayerId): void {
 export function startMasterDuel(s: GameState): void {
   const p = activePlayer(s);
   s.duel = createDuel('master', [{ kind: 'player', playerId: p.id }, { kind: 'master' }], p.location);
+  s.stats.duelsFought++;
   autoAdvance(s.duel, s);
   log(s, 'duel', `${p.name} tritt im Herrenhaus gegen die Klingenmeisterin an.`);
 }

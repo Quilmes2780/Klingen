@@ -10,9 +10,11 @@ export function applyEndTurn(s: GameState): void {
   ensure(s.phase === 'playing', 'Die Partie läuft nicht.');
   ensure(!s.duel, 'Erst das Wortgefecht beenden.');
   const p = activePlayer(s);
+  // ANNAHME: Über dem Handlimit wird erst am Zugende abgeworfen (Person wählt).
   ensure(p.items.length <= BALANCE.handLimit, `Handlimit ${BALANCE.handLimit}: ${p.name} muss erst Gegenstände abwerfen.`);
   tickFavors(s, p.id);
 
+  // ANNAHME: Während der letzten Züge vor dem Finale gibt es keine Fluchphase mehr.
   if (s.finale && s.finale.stage === 'countdown') {
     if (s.countdownTurn) s.finale.countdown.shift();
     if (!s.finale.countdown.length) {
